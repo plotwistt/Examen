@@ -7,7 +7,14 @@ const int mtCedula = 175233471;
 
 void mt()
 {
-    
+    HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
+
+    SetConsoleTextAttribute(hConsole, 1);
+    cout << "COLOR " <<mtNombre<< mtCedula<<endl;
+    HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
+
+    SetConsoleTextAttribute(hConsole, 1);
+    cout << "COLOR " <<mtNombre<< mtCedula<<endl;
 }
 
 
