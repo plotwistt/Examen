@@ -1,33 +1,45 @@
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
 #include "../lib/mtColor.h"
 using namespace std;
 
-string mtNombre = "Marlon Michael Tipan Zhicay";
+const string mtNombre = "Marlon Michael Tipan Zhicay";
 const int mtCedula = 175233471;
 
-void mt()
+// Definición de Coordenadas
+struct mtCoordenada
 {
-    HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
+    int mtcapacidad_belica;
+    char mtgeolocalizacion[20];
+    char mtdetalle_arsenal[40];
+    struct mtarsenal *izquierda;
+    struct mtarsenal *derecha;
+};
 
-    SetConsoleTextAttribute(hConsole, 1);
-    cout << "COLOR " <<mtNombre<< mtCedula<<endl;
-    HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
 
+//Procedimiento para leer el archivo 
+//void mtlectura(){
+
+//}
+
+void mtpresentarAr(){
+    HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
     SetConsoleTextAttribute(hConsole, 1);
-    cout << "COLOR " <<mtNombre<< mtCedula<<endl;
+    cout<<"[+]Informacion Arbol Binario de capacidad Belica Ucraniana"<<endl
+        <<"Developer-Nombre : "<<mtNombre<<endl
+        <<"Developer-Cedula : "<<mtCedula<<endl
+        <<"Capacidad Belica : "<<endl
+        <<"Coordeanada-Total : "<<endl
+        <<"Coordeanda-SecCarga : "<<endl;
 }
-
-
-
-
-
 
 int main()
 {
-    HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
+    mtpresentarAr();
+    ifstream mtarchivocoor("coordenadas.txt");
 
-    SetConsoleTextAttribute(hConsole, 1);
-    cout << "COLOR " <<mtNombre<< mtCedula<<endl;
     return 0;
 }
 

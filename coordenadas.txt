@@ -1,0 +1,12 @@
+Cap, Geo, Tipo de arsenal
+
+1, GPS0, bc
+7, GPS7, aaabbct
+4, GPS4, acd
+3, GPS3, bcd
+6, GPS6, act
+3, GPS3, bcd
+2, GPS2, ac 
+5, GPS5, bct
+7, GPS7, aaabbct
+1, GPS1, bc
